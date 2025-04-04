@@ -16,22 +16,24 @@ const CONFIG = {
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          projects: [
+            'DanTGL/DynamicPortfolio'
+          ], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
         // Properties for manually specifying projects
-        //projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['DanTGL/MyOS'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
-      projects: [
+      /*projects: [
         {
           title: 'Project Name',
           description:
@@ -48,7 +50,7 @@ const CONFIG = {
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://example.com',
         },
-      ],
+      ],*/
     },
   },
   seo: {
@@ -79,65 +81,109 @@ const CONFIG = {
     email: 'daniel.hajjar16@gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    //fileUrl:
+    //  'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
+    'Rust',
+    'Linux',
+    'Zephyr',
+    'C/C++',
+    'OS Development',
+    'x86',
+    'Embedded',
+    'Emulation',
+    'RTOS',
+    'FPGA',
+    'Python',
+    'Bash',
+    'OpenGL',
+    'WebGPU',
     'PHP',
-    'Laravel',
+    'WordPress',
     'JavaScript',
-    'React.js',
     'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
     'Docker',
-    'PHPUnit',
+    'Podman',
     'CSS',
-    'Antd',
     'Tailwind',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Ductus',
+      position: 'Fullstack Developer',
+      from: 'February 2023',
+      to: 'May 2023',
+      companyLink: 'https://ductus.global/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Digital Island AB',
+      position: 'WordPress Developer',
+      from: 'January 2022',
+      to: 'June 2022',
+      companyLink: 'https://digitalisland.se/',
     },
+    {
+      company: 'yDesign AB',
+      position: 'Internship',
+      from: 'March 2021',
+      to: 'June 2021',
+    }
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'Zephyr Technical Contributor',
+      body: 'The Linux Foundation',
+      year: 'March 2025',
+      link: 'https://www.credly.com/badges/a7f6e893-c9d0-4f9a-bfa7-b42b6c52b66c/linked_in_profile',
     },
+    {
+      name: 'Foundational C# with Microsoft',
+      body: 'freeCodeCamp & Microsoft',
+      year: 'October 2024',
+      link: 'https://freecodecamp.org/certification/fcc6885be73-70d7-411a-a100-aae3fe7ea553/foundational-c-sharp-with-microsoft',
+    },
+    {
+      name: 'Scientific Computing with Python',
+      body: 'freeCodeCamp',
+      year: 'October 2024',
+      link: 'https://freecodecamp.org/certification/fcc6885be73-70d7-411a-a100-aae3fe7ea553/scientific-computing-with-python-v7',
+    },
+    {
+      name: 'JavaScript Algorithms and Data Structures',
+      body: 'freeCodeCamp',
+      year: 'September 2024',
+      link: 'https://freecodecamp.org/certification/fcc6885be73-70d7-411a-a100-aae3fe7ea553/javascript-algorithms-and-data-structures-v8',
+    },
+    {
+      name: 'Introduction to Programming using Python (Credential-Id: wawBk-FaXo)',
+      body: 'Microsoft Technology Associate',
+      year: 'May 2021',
+      link: 'https://verify.certiport.com/',
+    },
+    {
+      name: 'Introduction to Programming using Java (Credential-Id: LMbX-sFcG)',
+      body: 'Microsoft Technology Associate',
+      year: 'May 2021',
+      link: 'https://verify.certiport.com/',
+    }
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'NTI-Gymnasiet Uppsala',
+      degree: 'Certified Upper Secondary School Engineer',
+      from: '2020',
+      to: '2021',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'NTI-Gymnasiet Uppsala',
+      degree: 'Information Technology',
+      from: '2016',
+      to: '2020',
     },
   ],
   publications: [
-    {
+    /*{
       title: 'Publication Title',
       conferenceName: '',
       journalName: 'Journal Name',
@@ -154,7 +200,7 @@ const CONFIG = {
       link: 'https://example.com',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
+    },*/
   ],
   // Display articles from your medium or dev account. (Optional)
   //blog: {
