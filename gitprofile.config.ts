@@ -21,7 +21,8 @@ const CONFIG = {
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [
-            'DanTGL/DynamicPortfolio'
+            'DanTGL/DynamicPortfolio',
+            'DanTGL/Portfolio',
           ], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
